@@ -7,17 +7,17 @@ USE prova2;
 /*Criando tabela*/
 
 CREATE TABLE produtos(
-    id PRIMARY KEY AUTO_INCREMENT,
+    id int auto_increment primary key,
     nome VARCHAR(60),
     fabricante VARCHAR(60),
     quantidade INT,
-    valor_unit,
+    valor_unit int,
     tipo VARCHAR(60)
 );
 
 /*Inserindo dados*/
 
-INSERT INTO produto (nome, fabricante, quantidade, valor_unit, tipo)
+INSERT INTO produtos (nome, fabricante, quantidade, valor_unit, tipo)
 VALUES ("Playstation 3", "Sony", 100, 1990, "Console"),
 ("Core 2 Duo 4GB Ram 500GB HD", "Dell", 200, 1890, "Notebook"),
 ("Xbox 360 120GB", "Microsoft", 350, 1290, "Console"),
